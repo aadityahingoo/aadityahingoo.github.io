@@ -1,0 +1,44 @@
+# Python virtual environments
+idk.venv/
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# OneDrive / Office temp + conflict files
+~$*
+*.tmp
+*-DESKTOP-*.*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Build output (if a static site generator is added later)
+_site/
+.jekyll-cache/
+node_modules/
+dist/
+.cache/
+
+# Source/working files that shouldn't be published
+*.sldprt
+*.sldasm
+*.slddrw
+*.prt
+*.step
+*.stp
+*.psd
+raw-photos/
+
+# Secrets
+.env
+.env.*

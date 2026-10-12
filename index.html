@@ -3,328 +3,193 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aaditya Hingoo</title>
+  <title>Aaditya Hingoo — Mechanical Engineering</title>
+  <meta name="description" content="Aaditya Hingoo — Mechanical Engineering at Georgia Tech. Product design, DFM, FEA, and hands-on fabrication.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;1,300&family=IBM+Plex+Serif:ital,wght@0,300;0,400;1,300&display=swap">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ─── Nav ─────────────────────────────────────────── -->
-  <nav>
-    <a href="#top" class="nav-id">Aaditya Hingoo</a>
-    <div class="nav-links">
-      <a href="#internships">Internships</a>
-      <a href="#projects">Projects</a>
-      <a href="#coursework">Coursework</a>
-      <a href="resume.pdf" target="_blank">Resume ↗</a>
-    </div>
-  </nav>
+  <!-- ─── Header: everything a recruiter needs above the fold ─── -->
+  <header class="top">
+    <div class="wrap">
+      <div class="id-row">
+        <h1>Aaditya Hingoo</h1>
+        <nav class="links">
+          <a href="resume.pdf" target="_blank" class="btn">Resume (PDF)</a>
+          <a href="mailto:ahingoo3@gatech.edu">ahingoo3@gatech.edu</a>
+          <a href="https://linkedin.com/in/aadityahingoo" target="_blank">LinkedIn</a>
+          <a href="https://github.com/aadityahingoo" target="_blank">GitHub</a>
+        </nav>
+      </div>
 
-  <main id="top">
-
-    <!-- ─── Hero ─────────────────────────────────────── -->
-    <section class="hero">
-      <div class="hero-eyebrow">Mechanical Engineer &nbsp;·&nbsp; Georgia Institute of Technology</div>
-      <h1>Aaditya<br>Hingoo</h1>
-      <p class="hero-bio">
-        <!-- PLACEHOLDER: Write 2–3 sentences about yourself — who you are as an engineer,
-             what you care about building, and what drives your work. -->
-        [Short bio — who you are, what you care about building, and what kind of engineer you're becoming.]
+      <p class="tagline">
+        B.S. Mechanical Engineering, Georgia Tech &nbsp;·&nbsp; [Class of 20XX]
+        &nbsp;·&nbsp; Seeking [Summer 2027 internship / co-op] in [product design / mechanical design]
       </p>
-      <div class="hero-links">
-        <a href="mailto:ahingoo3@gatech.edu">ahingoo3@gatech.edu</a>
-        <span class="sep">·</span>
-        <a href="https://linkedin.com/in/aadityahingoo" target="_blank">LinkedIn ↗</a>
-        <span class="sep">·</span>
-        <a href="https://github.com/aadityahingoo" target="_blank">GitHub ↗</a>
-      </div>
-    </section>
 
-    <!-- ─── 01 · Internships ──────────────────────────── -->
-    <section class="content-section" id="internships">
-      <div class="section-header">
-        <span class="section-num">01</span>
-        <h2>Internships</h2>
-      </div>
+      <!-- One honest sentence beats a paragraph of adjectives. -->
+      <p class="bio">
+        [I like taking physical products from sketch to something that survives a factory and a user —
+        silicone, sheet metal, drivetrains, whatever the problem needs.]
+      </p>
 
-      <div class="group">
-        <div class="group-label-row">
-          <span class="group-label">Backbone</span>
-          <span class="group-meta">Product Design Engineering Intern &nbsp;·&nbsp; Fall 2024</span>
+      <dl class="skills">
+        <dt>CAD</dt>       <dd>SolidWorks, Siemens NX, GD&amp;T</dd>
+        <dt>Analysis</dt>  <dd>FEA (Altair HyperWorks), Python, parametric sizing / trade studies</dd>
+        <dt>Mfg</dt>       <dd>Compression molding, DFM, waterjet, laser cut, FDM, machining</dd>
+        <dt>Process</dt>   <dd>NPI, control plans, FA / RCA, APAC vendor management</dd>
+      </dl>
+
+      <p class="now"><span>Currently building:</span> [one line on whatever you're working on right now]</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- ═══════════════════════════════════════════════════════
+         PROJECTS — each card: photo + problem / did / result.
+         "Details" expands inline; no page loads.
+         ═══════════════════════════════════════════════════════ -->
+    <h2 class="sec"><span>01</span> Projects</h2>
+
+    <!-- Backbone -->
+    <article class="proj" id="backbone">
+      <header class="proj-head">
+        <h3>Backbone Pro — Xbox Edition</h3>
+        <span class="meta">Internship · Backbone · Product Design Eng. · Fall 2024</span>
+      </header>
+      <div class="proj-body">
+        <figure class="ph">[ photo: membrane or controller teardown ]</figure>
+        <!-- <figure><img src="assets/backbone.jpg" alt="Silicone button membrane"></figure> -->
+        <dl class="spec">
+          <dt>Problem</dt><dd>[What was wrong / missing when you joined. One line.]</dd>
+          <dt>Did</dt><dd>Designed, validated, and qualified the compression-molded silicone button membrane from the ground up; ran DFM with APAC vendors and owned failure analysis.</dd>
+          <dt>Result</dt><dd>Shipped to market in a production controller. [Add a number: rev count, yield, test cycles passed.]</dd>
+        </dl>
+      </div>
+      <p class="chips"><span>Silicone molding</span><span>DFM</span><span>GD&amp;T</span><span>APAC vendor mgmt</span><span>FA / RCA</span><span>NPI control plans</span></p>
+      <details>
+        <summary>Details: process, iterations, what went wrong</summary>
+        <div class="log">
+          <p><b>Design decisions.</b> [Geometry, durometer, tolerances, and why.]</p>
+          <p><b>Iterations.</b> [How many tooling rounds, what changed each time.]</p>
+          <p><b>Validation.</b> [Tests run, pass/fail criteria you set.]</p>
+          <p><b>What went wrong.</b> [A real failure and how you root-caused it. This is the part that convinces people.]</p>
+          <p><b>Also owned.</b> NPI control plan and system-level specs for production handoff. [What it tracked, who used it.]</p>
+          <div class="ph-row"><figure class="ph sm">[ prototype ]</figure><figure class="ph sm">[ final part ]</figure></div>
         </div>
+      </details>
+    </article>
 
-        <a href="projects/backbone-pro.html" class="entry-row">
-          <div class="entry-left">
-            <span class="entry-id">01.1</span>
-            <span class="entry-title">Backbone Pro — Xbox Edition</span>
-          </div>
-          <div class="entry-right">
-            <p class="entry-desc">Ground-up design, validation, and qualification of a compression-molded silicone button membrane for a production gaming controller shipped to market.</p>
-            <div class="entry-chips">
-              <span>Silicone Molding</span><span>DFM</span><span>APAC Vendor Mgmt</span><span>FA / RCA</span>
-            </div>
-          </div>
-          <span class="entry-arrow">→</span>
-        </a>
-
-        <a href="projects/backbone-npi.html" class="entry-row">
-          <div class="entry-left">
-            <span class="entry-id">01.2</span>
-            <span class="entry-title">NPI Control Plan &amp; System-Level Specs</span>
-          </div>
-          <div class="entry-right">
-            <p class="entry-desc">Developed new product introduction documentation including control plans and system-level specification frameworks for production handoff.</p>
-            <div class="entry-chips">
-              <span>NPI</span><span>Control Plans</span><span>System Specs</span><span>Documentation</span>
-            </div>
-          </div>
-          <span class="entry-arrow">→</span>
-        </a>
+    <!-- DRXC Ground Control Station -->
+    <article class="proj" id="drxc-gcs">
+      <header class="proj-head">
+        <h3>Drone Ground Control Station</h3>
+        <span class="meta">DRXC · Competition team · 2024–25</span>
+      </header>
+      <div class="proj-body">
+        <figure class="ph">[ photo: GCS open in the field ]</figure>
+        <dl class="spec">
+          <dt>Problem</dt><dd>[Setup at competition took X min and gear lived in loose bins.]</dd>
+          <dt>Did</dt><dd>Designed and built a portable operations station inside a modular toolbox. 3D-printed, laser-cut, and waterjet parts integrated with the team's electronics.</dd>
+          <dt>Result</dt><dd>Competition setup time under 3 minutes.</dd>
+        </dl>
       </div>
-    </section>
-
-    <!-- ─── 02 · Projects ────────────────────────────── -->
-    <section class="content-section" id="projects">
-      <div class="section-header">
-        <span class="section-num">02</span>
-        <h2>Projects</h2>
-      </div>
-
-      <!-- DRXC -->
-      <div class="group">
-        <div class="group-label-row">
-          <span class="group-label">DRXC</span>
-          <span class="group-meta">Club / Competition &nbsp;·&nbsp; 2024–2025</span>
+      <p class="chips"><span>3D printing</span><span>Laser cut</span><span>Waterjet</span><span>Systems integration</span></p>
+      <details>
+        <summary>Details: also wrote the motor sizing code</summary>
+        <div class="log">
+          <p><b>Build.</b> [Layout constraints, mounting, cable management, power.]</p>
+          <p><b>Sizing code &amp; motor downselect.</b> Wrote parametric Python sizing code to score motor candidates against mission requirements and produced the team's downselect recommendation. [Link to repo / plot.]</p>
+          <p><b>What went wrong.</b> [ ]</p>
         </div>
+      </details>
+    </article>
 
-        <a href="projects/drxc-gcs.html" class="entry-row">
-          <div class="entry-left">
-            <span class="entry-id">02.1</span>
-            <span class="entry-title">Ground Control Station</span>
-          </div>
-          <div class="entry-right">
-            <p class="entry-desc">Designed and built a portable drone operations station from a modular toolbox, cutting competition setup time to under 3 minutes.</p>
-            <div class="entry-chips">
-              <span>3D Printing</span><span>Laser Cut</span><span>Waterjet</span><span>Systems Integration</span>
-            </div>
-          </div>
-          <span class="entry-arrow">→</span>
-        </a>
-
-        <a href="projects/drxc-sizing.html" class="entry-row">
-          <div class="entry-left">
-            <span class="entry-id">02.2</span>
-            <span class="entry-title">Sizing Code &amp; Motor Downselect</span>
-          </div>
-          <div class="entry-right">
-            <p class="entry-desc">Built parametric sizing code to evaluate motor candidates against mission requirements and produced a structured downselect recommendation.</p>
-            <div class="entry-chips">
-              <span>Python</span><span>Parametric Sizing</span><span>Trade Studies</span>
-            </div>
-          </div>
-          <span class="entry-arrow">→</span>
-        </a>
+    <!-- EcoCAR -->
+    <article class="proj" id="ecocar">
+      <header class="proj-head">
+        <h3>EcoCAR: Front Cradle Motor Mounts &amp; Drivetrain</h3>
+        <span class="meta">EcoCAR EV Challenge · 2023–24</span>
+      </header>
+      <div class="proj-body">
+        <figure class="ph">[ image: FEA contour plot or installed mount ]</figure>
+        <dl class="spec">
+          <dt>Problem</dt><dd>[Front EDU needed mounts that fit the cradle and survived X g load cases.]</dd>
+          <dt>Did</dt><dd>Designed waterjet sheet-metal motor mounts in Siemens NX and validated them with FEA in Altair HyperWorks. Also designed the rear halfshaft and ECU mount.</dd>
+          <dt>Result</dt><dd>[Safety factor / max stress vs. allowable; installed in vehicle?]</dd>
+        </dl>
       </div>
-
-      <!-- EcoCAR -->
-      <div class="group">
-        <div class="group-label-row">
-          <span class="group-label">EcoCAR</span>
-          <span class="group-meta">Club &nbsp;·&nbsp; 2023–2024</span>
+      <p class="chips"><span>Siemens NX</span><span>HyperWorks FEA</span><span>Sheet metal</span><span>Drivetrain</span><span>Packaging</span></p>
+      <details>
+        <summary>Details: halfshaft, ECU mount, FEA setup</summary>
+        <div class="log">
+          <p><b>FEA setup.</b> [Mesh, boundary conditions, load cases, convergence.]</p>
+          <p><b>Rear halfshaft.</b> [Challenge and what you delivered.]</p>
+          <p><b>ECU mount.</b> [Constraints, approach, how it was made.]</p>
         </div>
+      </details>
+    </article>
 
-        <a href="projects/ecocar-halfshaft.html" class="entry-row">
-          <div class="entry-left">
-            <span class="entry-id">02.3</span>
-            <span class="entry-title">Rear Halfshaft Design</span>
-          </div>
-          <div class="entry-right">
-            <p class="entry-desc">[Short description of the rear halfshaft design — what the challenge was and what you delivered.]</p>
-            <div class="entry-chips">
-              <span>SolidWorks</span><span>Drivetrain</span><span>GD&amp;T</span>
-            </div>
-          </div>
-          <span class="entry-arrow">→</span>
-        </a>
-
-        <a href="projects/ecocar-fea.html" class="entry-row">
-          <div class="entry-left">
-            <span class="entry-id">02.4</span>
-            <span class="entry-title">Front Cradle FEA</span>
-          </div>
-          <div class="entry-right">
-            <p class="entry-desc">Designed waterjet sheet-metal motor mounts for the front EDU in Siemens NX; validated structural integrity with FEA in Altair HyperWorks.</p>
-            <div class="entry-chips">
-              <span>Siemens NX</span><span>FEA</span><span>Altair HyperWorks</span><span>Sheet Metal</span>
-            </div>
-          </div>
-          <span class="entry-arrow">→</span>
-        </a>
-
-        <a href="projects/ecocar-ecu.html" class="entry-row">
-          <div class="entry-left">
-            <span class="entry-id">02.5</span>
-            <span class="entry-title">ECU Mount Design</span>
-          </div>
-          <div class="entry-right">
-            <p class="entry-desc">[Short description of the ECU mount — constraints, approach, and what was validated or manufactured.]</p>
-            <div class="entry-chips">
-              <span>CAD</span><span>Packaging</span><span>Manufacturing</span>
-            </div>
-          </div>
-          <span class="entry-arrow">→</span>
-        </a>
+    <!-- Mycelium -->
+    <article class="proj" id="mycelium">
+      <header class="proj-head">
+        <h3>Mycelium Composites for Wind Turbine Blades</h3>
+        <span class="meta">Grand Challenges research · 2022–23</span>
+      </header>
+      <div class="proj-body">
+        <figure class="ph">[ photo: samples / test rig ]</figure>
+        <dl class="spec">
+          <dt>Problem</dt><dd>Balsa core in turbine blades is supply-limited. Could grown mycelium replace it?</dd>
+          <dt>Did</dt><dd>Grew Reishi mycelium on sawdust substrate and characterized it with compression and tensile testing. Also explored mycelium textiles.</dd>
+          <dt>Result</dt><dd>[Measured modulus / strength vs. balsa. A plain chart here is great.]</dd>
+        </dl>
       </div>
+      <p class="chips"><span>Materials testing</span><span>Bio-composites</span><span>Data analysis</span></p>
+    </article>
 
-      <!-- Grand Challenges -->
-      <div class="group">
-        <div class="group-label-row">
-          <span class="group-label">Grand Challenges</span>
-          <span class="group-meta">Research &nbsp;·&nbsp; 2022–2023</span>
-        </div>
+    <!-- ═══════════════════════════════════════════════════════
+         SIDE BUILDS — the nobody-asked-me-to projects.
+         These are what make the passion read as real.
+         ═══════════════════════════════════════════════════════ -->
+    <h2 class="sec"><span>02</span> Built for fun</h2>
 
-        <a href="projects/mycelium-composite.html" class="entry-row">
-          <div class="entry-left">
-            <span class="entry-id">02.6</span>
-            <span class="entry-title">Mycelium Composite Testing</span>
-          </div>
-          <div class="entry-right">
-            <p class="entry-desc">Grew Reishi mycelium on sawdust substrate as a potential balsa wood replacement in wind turbine blades; characterized mechanical properties via compression and tensile testing.</p>
-            <div class="entry-chips">
-              <span>Materials Testing</span><span>Bio-composites</span><span>Data Analysis</span>
-            </div>
-          </div>
-          <span class="entry-arrow">→</span>
-        </a>
+    <div class="mini-grid">
+      <article class="mini">
+        <figure class="ph">[ photo ]</figure>
+        <h3>Coconut Shredder</h3>
+        <p>[What it does, how you made it, one interesting design problem.]</p>
+        <p class="chips"><span>Mechanism design</span><span>Fabrication</span></p>
+      </article>
+      <article class="mini">
+        <figure class="ph">[ photo ]</figure>
+        <h3>Mouth Harp</h3>
+        <p>[Metalworking process, tools, and how it sounds.]</p>
+        <p class="chips"><span>Metal fab</span><span>Machining</span></p>
+      </article>
+    </div>
 
-        <a href="projects/mycelium-textiles.html" class="entry-row">
-          <div class="entry-left">
-            <span class="entry-id">02.7</span>
-            <span class="entry-title">Mycelium Textiles</span>
-          </div>
-          <div class="entry-right">
-            <p class="entry-desc">[Short description of the mycelium textiles work — what was explored, fabricated, or characterized.]</p>
-            <div class="entry-chips">
-              <span>Biotextile</span><span>Fabrication</span><span>Characterization</span>
-            </div>
-          </div>
-          <span class="entry-arrow">→</span>
-        </a>
-      </div>
+    <!-- ═══════════════════════════════════════════════════════
+         COURSEWORK — compact table, not a click-through.
+         ═══════════════════════════════════════════════════════ -->
+    <h2 class="sec"><span>03</span> Course projects</h2>
 
-      <!-- Invention Studio -->
-      <div class="group">
-        <div class="group-label-row">
-          <span class="group-label">Invention Studio</span>
-          <span class="group-meta">Making &nbsp;·&nbsp; 2023</span>
-        </div>
-
-        <a href="projects/coconut-shredder.html" class="entry-row">
-          <div class="entry-left">
-            <span class="entry-id">02.8</span>
-            <span class="entry-title">Coconut Shredder</span>
-          </div>
-          <div class="entry-right">
-            <p class="entry-desc">[Short description — what it does, how it was made, and anything interesting about the design or fabrication process.]</p>
-            <div class="entry-chips">
-              <span>Fabrication</span><span>Mechanism Design</span>
-            </div>
-          </div>
-          <span class="entry-arrow">→</span>
-        </a>
-
-        <a href="projects/mouth-harp.html" class="entry-row">
-          <div class="entry-left">
-            <span class="entry-id">02.9</span>
-            <span class="entry-title">Mouth Harp Metalwork</span>
-          </div>
-          <div class="entry-right">
-            <p class="entry-desc">[Short description of the mouth harp metalworking project — process, tools used, and outcome.]</p>
-            <div class="entry-chips">
-              <span>Metal Fabrication</span><span>Precision Machining</span>
-            </div>
-          </div>
-          <span class="entry-arrow">→</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- ─── 03 · Coursework ───────────────────────────── -->
-    <section class="content-section" id="coursework">
-      <div class="section-header">
-        <span class="section-num">03</span>
-        <h2>Coursework</h2>
-      </div>
-
-      <div class="group">
-        <a href="projects/me4012.html" class="entry-row">
-          <div class="entry-left">
-            <span class="entry-id">ME 4012</span>
-            <span class="entry-title">Motion Systems</span>
-          </div>
-          <div class="entry-right">
-            <p class="entry-desc">[Key topics, design project, or takeaway from this course.]</p>
-            <div class="entry-chips"><span>Controls</span><span>Kinematics</span><span>Actuators</span></div>
-          </div>
-          <span class="entry-arrow">→</span>
-        </a>
-
-        <a href="projects/ae3030.html" class="entry-row">
-          <div class="entry-left">
-            <span class="entry-id">AE 3030</span>
-            <span class="entry-title">Aerodynamics</span>
-          </div>
-          <div class="entry-right">
-            <p class="entry-desc">Investigated how wingspan and sweep angle affect glideslope via parametric CAD and FDM-printed test models. Zero sweep with large wingspan yielded the shallowest glide path.</p>
-            <div class="entry-chips"><span>Aerodynamics</span><span>FDM Printing</span><span>Parametric CAD</span></div>
-          </div>
-          <span class="entry-arrow">→</span>
-        </a>
-
-        <a href="projects/me2110.html" class="entry-row">
-          <div class="entry-left">
-            <span class="entry-id">ME 2110</span>
-            <span class="entry-title">Creative Decisions &amp; Design</span>
-          </div>
-          <div class="entry-right">
-            <p class="entry-desc">Designed and built an electromechanical competition robot with a team of four — laser-cut acrylic, woodwork, pneumatics, solenoids, and mousetraps.</p>
-            <div class="entry-chips"><span>Laser Cut</span><span>Pneumatics</span><span>Team Design</span></div>
-          </div>
-          <span class="entry-arrow">→</span>
-        </a>
-
-        <a href="projects/me3440.html" class="entry-row">
-          <div class="entry-left">
-            <span class="entry-id">ME 3440</span>
-            <span class="entry-title">Fluid Mechanics</span>
-          </div>
-          <div class="entry-right">
-            <p class="entry-desc">Quantified how surface curvature radius affects fluid adhesion (Coandă effect) and built a predictive model from momentum and boundary layer theory.</p>
-            <div class="entry-chips"><span>Fluid Mechanics</span><span>Experimental</span><span>Math Modeling</span></div>
-          </div>
-          <span class="entry-arrow">→</span>
-        </a>
-
-        <a href="projects/me1670.html" class="entry-row">
-          <div class="entry-left">
-            <span class="entry-id">ME 1670</span>
-            <span class="entry-title">Intro to Engineering Design</span>
-          </div>
-          <div class="entry-right">
-            <p class="entry-desc">Modeled and rendered a fully detailed rocket-powered motorcycle concept in SolidWorks — exploded assembly, annotated views, and photorealistic renders.</p>
-            <div class="entry-chips"><span>SolidWorks</span><span>Assembly Design</span><span>Rendering</span></div>
-          </div>
-          <span class="entry-arrow">→</span>
-        </a>
-      </div>
-    </section>
+    <table class="courses">
+      <tr><th>ME 2110</th><td>Creative Decisions &amp; Design</td><td>Electromechanical competition robot, team of 4: laser-cut acrylic, pneumatics, solenoids.</td></tr>
+      <tr><th>AE 3030</th><td>Aerodynamics</td><td>Parametric CAD and FDM gliders testing wingspan and sweep vs. glideslope. Zero sweep with large span glided shallowest.</td></tr>
+      <tr><th>ME 3440</th><td>Fluid Mechanics</td><td>Measured how surface curvature radius affects Coandă adhesion; built a predictive model from boundary-layer theory.</td></tr>
+      <tr><th>ME 4012</th><td>Motion Systems</td><td>[Design project or key takeaway.]</td></tr>
+      <tr><th>ME 1670</th><td>Intro to Eng. Design</td><td>Fully detailed rocket-powered motorcycle in SolidWorks: exploded assembly, drawings, renders.</td></tr>
+    </table>
 
   </main>
 
-  <footer>
-    <span>Aaditya Hingoo &nbsp;·&nbsp; Georgia Tech ME &nbsp;·&nbsp; <a href="mailto:ahingoo3@gatech.edu">ahingoo3@gatech.edu</a></span>
-    <a href="#top" class="back-top">↑ Top</a>
+  <footer class="wrap">
+    <span>Aaditya Hingoo · <a href="mailto:ahingoo3@gatech.edu">ahingoo3@gatech.edu</a></span>
+    <span>Updated [Oct 2026]</span>
   </footer>
 
 </body>

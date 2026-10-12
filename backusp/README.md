@@ -1,2 +1,0 @@
-# aadityahingoo.github.io
-hingzdoesthingz
